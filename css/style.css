@@ -1,0 +1,55 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+/*Variaveis*/
+:root{
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%);
+--Dark-Gray: hsl(0, 0%, 55%);
+--Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+/*Formatções gerais*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 15px;
+    font-family: 'Alata';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Josefin Sans';
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*Header*/
+header{
+    background-image: url('../images/desktop/image-hero2.jpg');
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: cover;
+    height: 80vh;
+    color: var(--White);
+}
+
+
+
+header #efeitoHeader .container span{
+    opacity: 100% !important;
+}
+
+
+/*Responsivo celular/tablet*/
+@media (max-width: 768px) {
+    
+}
