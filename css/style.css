@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
 /*Variaveis*/
+html{
+    font-size: 15px;
+}
+
 :root{
 --White: hsl(0, 0%, 100%);
 --Black: hsl(0, 0%, 0%);
@@ -19,12 +23,20 @@
 body{
     width: 100vw;
     height: 100vh;
-    font-size: 15px;
     font-family: 'Alata';
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Josefin Sans';
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 .container{
@@ -34,19 +46,48 @@ h1,h2,h3,h4,h5,h6{
 
 /*Header*/
 header{
-    background-image: url('../images/desktop/image-hero2.jpg');
+    background-image: url('../images/desktop/image-hero3.jpg');
     background-repeat: no-repeat;
     background-position: auto;
     background-size: cover;
     height: 80vh;
+    color: var(--White) !important;
+    padding: 50px 0 70px 0;
+}
+
+header a{
     color: var(--White);
 }
 
-
-
-header #efeitoHeader .container span{
-    opacity: 100% !important;
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
 }
+
+header .container nav ul li a{
+    padding: 0 15px;
+    margin: 0 5px;
+    position: relative;
+}
+
+header .container nav ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--White);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: width 0.2s ease-in-out;
+}
+
+header .container nav a:hover::after{
+    width: 30%;
+}
+
 
 
 /*Responsivo celular/tablet*/
