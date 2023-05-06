@@ -30,6 +30,7 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Josefin Sans';
+    font-size: 2em;
 }
 
 ul{
@@ -48,8 +49,8 @@ button{
 }
 
 .container{
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
 }
 
 .oculto{
@@ -62,7 +63,7 @@ header{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center contain;
-    height: 80vh;
+    height: 90vh;
     color: var(--White) !important;
     padding: 50px 0 70px 0;
 }
@@ -71,6 +72,7 @@ header a{
     color: var(--White);
 }
 
+/* Nav */
 header .container nav{
     display: flex;
     justify-content: space-between;
@@ -129,6 +131,25 @@ header .container nav #btn-hamburger:active{
     background-color: rgba(0,0,0, 0.5);
 }
 
+/* Header content */
+header #header-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+header #header-content #caixa-header{
+    border: 3px solid var(--White);
+    padding: 35px;
+    width: 50%;
+    max-height: 350px;
+}
+
+header #header-content #caixa-header h1{
+    font-weight: 300;
+    font-size: 4.5em;
+}
 
 
 
@@ -203,6 +224,15 @@ header .container nav #btn-hamburger:active{
     .navAtiva{
        right: 0 !important; 
     }
+
+    /* Header content */
+    header #header-content #caixa-header{
+        margin: 0 auto;
+        width: 80%;
+        padding: 30px 25px;
+    }
+    
+
 }
 
 
@@ -221,6 +251,19 @@ header .container nav #btn-hamburger:active{
 
     header .container nav #lista-links{
         padding: 30px 15px;
+    }
+
+    header #header-content #caixa-header{
+        margin: 0 auto;
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header #header-content #caixa-header h1{
+        font-size: calc(4.5em - 25px);
     }
 
 }
