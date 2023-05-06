@@ -3,6 +3,7 @@
 /*Variaveis*/
 html{
     font-size: 15px;
+    overflow-x: hidden;
 }
 
 :root{
@@ -129,8 +130,12 @@ header .container nav #btn-hamburger:active{
 }
 
 
+
+
 /*Responsivo celular/tablet*/
 @media (max-width: 912px){
+
+    
     .container{
         width: 90%;
     }
@@ -152,12 +157,13 @@ header .container nav #btn-hamburger:active{
         position: absolute;
         width: 100vw;
         height: 100vh;
-        right: 0%;
+        right: -100%;
         background-color: var(--Black);
         flex-direction: column;
         top: 0;
         padding: 30px;
         font-family: 'Josefin Sans' !important;
+        transition: all 0.5s ease-in-out;
     }
 
     header .container nav #lista-links #linha-bar-mobile{
@@ -173,7 +179,7 @@ header .container nav #btn-hamburger:active{
         background-color: transparent;
         padding: 10px;
         border-radius: 100px;
-        transition: background-color 0.4s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
     }
 
     header .container nav #lista-links #linha-bar-mobile #btn-close:active{
@@ -193,6 +199,10 @@ header .container nav #btn-hamburger:active{
         width: 0;
         height: 0;
     }
+
+    .navAtiva{
+       right: 0 !important; 
+    }
 }
 
 
@@ -201,7 +211,7 @@ header .container nav #btn-hamburger:active{
         
     
     header .container nav .logo{
-        width: 40%;
+        width: 35% !important;
     }
     
 
@@ -212,8 +222,5 @@ header .container nav #btn-hamburger:active{
     header .container nav #lista-links{
         padding: 30px 15px;
     }
-
-    
-
 
 }
