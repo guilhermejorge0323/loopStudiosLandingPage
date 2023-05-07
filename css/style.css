@@ -151,6 +151,44 @@ header #header-content #caixa-header h1{
     font-size: 4.5vw;
 }
 
+/* Main */
+/* Conteudo main 1 */
+main .main-content{
+    margin-top: 10vh;
+}
+
+main .main-content .container #caixa-main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+}
+
+main .main-content .container #caixa-main img{
+    width: 100%;
+}
+
+main .main-content .container #caixa-main #caixa-texto-main{
+    width: 50%;
+    background-color: var(--White);
+    height: 65%;
+    top: 35%;
+    right: 0;
+    position: absolute;
+    padding: 10% 70px 0 70px;
+}
+
+
+main .main-content .container #caixa-main #caixa-texto-main h1{
+    font-size: 3.4vw;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+main .main-content .container #caixa-main #caixa-texto-main p{
+    color: var(--Dark-Gray);
+}
+
+
 
 
 /*Responsivo celular/tablet*/
@@ -236,6 +274,28 @@ header #header-content #caixa-header h1{
         font-size: 9vw;
     }
 
+    /* Main */
+    /* Conteudo main 1 */
+    main .main-content .container #caixa-main{
+        grid-template-columns: 1fr;
+    }
+
+    main .main-content .container #caixa-main #caixa-texto-main{
+        width: 100%;
+        position: static;
+        padding: 10% 20px 0 20px;
+        text-align: center;
+    }
+
+    main .main-content .container #caixa-main #caixa-texto-main h1{
+        font-size: 7.5vw;
+        margin-bottom: 15px;
+    }
+
+    main .main-content .container #caixa-main #caixa-texto-main p{
+        font-size: 4vw;
+    }
+
 }
 
 
@@ -268,6 +328,7 @@ header #header-content #caixa-header h1{
 
     header #header-content #caixa-header h1{
         font-size: 11vw;
+        
     }
 
 }
