@@ -148,7 +148,7 @@ header #header-content #caixa-header{
 
 header #header-content #caixa-header h1{
     font-weight: 300;
-    font-size: 4.5em;
+    font-size: 4.5vw;
 }
 
 
@@ -232,6 +232,9 @@ header #header-content #caixa-header h1{
         padding: 30px 25px;
     }
     
+    header #header-content #caixa-header h1{
+        font-size: 9vw;
+    }
 
 }
 
@@ -247,6 +250,7 @@ header #header-content #caixa-header h1{
 
     header .container nav #lista-links #linha-bar-mobile .logo{
         width: 60%;
+    
     }
 
     header .container nav #lista-links{
@@ -263,7 +267,7 @@ header #header-content #caixa-header h1{
     }
 
     header #header-content #caixa-header h1{
-        font-size: calc(4.5em - 25px);
+        font-size: 11vw;
     }
 
 }
