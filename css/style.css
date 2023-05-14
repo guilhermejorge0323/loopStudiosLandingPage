@@ -27,6 +27,7 @@ body{
     font-family: 'Alata';
     overflow-x: hidden !important;
     position: relative;
+    
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -68,6 +69,7 @@ header{
     height: 90vh;
     color: var(--White) !important;
     padding: 50px 0 70px 0;
+    min-height: 560px !important;
 }
 
 header a, footer a{
@@ -101,7 +103,7 @@ header .container nav #lista-links li a, footer #lista-links li a{
 }
 
 
-header .container nav ul li a::after, footer #lista-links li a::after{
+header .container nav ul li a::after, footer #lista-links li a::after, footer .container #social-footer #area-icons a::after{
     content: " ";
     width: 0%;
     height: 2px;
@@ -113,7 +115,7 @@ header .container nav ul li a::after, footer #lista-links li a::after{
     transition: width 0.2s ease-in-out;
 }
 
-header .container nav a:hover::after, footer #lista-links li a:hover::after{
+header .container nav a:hover::after, footer #lista-links li a:hover::after, footer .container #social-footer #area-icons a:hover::after{
     width: 50%;
 }
 
@@ -306,6 +308,30 @@ footer .container #links-footer .logo img{
 footer .container #links-footer #lista-links{
     margin-top: 10px;
 }
+
+footer .container #social-footer{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+footer .container #social-footer #area-icons a{
+    margin: 0px 5px;
+    padding: 2px;
+    position: relative;
+}
+
+footer .container #social-footer #area-icons a img{
+    width: 20px;
+    height: 20px;
+}
+
+footer .container #social-footer p{
+    color: var(--Very-Dark-Gray);
+    margin-top: 10px;
+}
+
+
 
 
 /*Responsivo celular/tablet*/
@@ -507,6 +533,20 @@ footer .container #links-footer #lista-links{
         margin: 10px 0;
         font-size: 3vw;
     }
+
+    footer .container #social-footer{
+        margin-top: 30px;
+    }
+
+    footer .container #social-footer{
+        align-items: center;
+    }
+
+    footer .container #social-footer p{
+        font-size: 3.5vw;
+    }
+
+    
 
 }
 
