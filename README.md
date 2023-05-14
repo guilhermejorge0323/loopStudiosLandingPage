@@ -1,7 +1,7 @@
 # Projeto Landing page loopstudios
 **Por: Guilherme Jorge**
 
-## Projeto pegado em
+### Projeto pegado em
 [https://www.frontendmentor.io/](https://www.frontendmentor.io/)
 
 Foi usado: 
