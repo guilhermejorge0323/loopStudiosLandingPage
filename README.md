@@ -5,9 +5,9 @@
 [https://www.frontendmentor.io/](https://www.frontendmentor.io/)
 
 Foi usado: 
-    *HTML
-    *CSS
-    *Javascript
+* HTML
+* CSS
+* Javascript
 
 ### Template do projeto para Desktop:
 ![Desktop template](design/desktop-design.jpg)
